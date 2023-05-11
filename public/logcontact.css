@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background: url('https://images.wallpaperscraft.com/image/circles_highlights_background_form_size_47438_2560x1600.jpg') no-repeat top center;
+    background-size: cover;
+    height: 100vh;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 0 20px;
+}
+.contact-fome{
+    max-width: 550px;
+    margin: 0 auto;
+    background: rgba(0,0,0,0.8);
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+.input-class{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+}
+.input-class, .msg{
+    width: 48%;
+}
+.input-class .input, .msg textarea{
+    margin: 10px 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid #41B5E6;
+    padding: 10px;
+    color: aqua;
+    width: 100%;
+}
+.msg textarea{
+    height: 200px;
+}
+::-webkit-input-placeholder{
+    color: aquamarine;
+}
+::-moz-input-placeholder{
+    color: aquamarine;
+}
+.button{
+   
+}
+.btn{
+    background: #39b7dd;
+    text-align: center;
+    padding: 15px;
+    border-radius:  5px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+    box-shadow: 3px 3px 3px #888888;
+}
+msg,button:hover{
+    background-color: orange;
+    color: black;
+}
+@media screen and (max-width: 600px){
+    .contact-fome{
+        flex-direction: column;
+    }
+    .msg text-area{
+        height: 80px;
+    }
+    .input-class, .msg{
+        width: 100%;
+    }
+}
